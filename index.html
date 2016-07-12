@@ -1,42 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>iSee.ai</title>
-  </head>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
+<style type="text/css">
+/* header */
+.container {
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	bottom: 0;
+ 	right: 0;
+  	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	}
+.header {
+	padding-top: 0em;
+	padding-left: 7vw;
+	padding-right: 7vw;	
+	}
+.site-logo {
+	width: 110px;
+}
+.nav {
+	display: flex;
+	flex-direction: row;
+	float: right;
+	}
+.nav a {
+	display: block;
+	font-size: 1.2em;
+	text-align: center;
+	padding: 0.4em;
+	text-decoration: none;
+	width: 5em;
+	font-variant: small-caps;
+	font-weight: 300;
+	}
+.nav-active{
+	color: #FFFFFF;
+		}
+.nav-inactive{
+	color: #AFAFAF;
+		}
+.nav a:hover {
+	display: block;
+	color: #FFFFFF;
+	}
+ul{
+list-style-type:none;
+}
+/* logo */
+.logo{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-top: -125px; /* Half the height */
+	margin-left: -125px; /* Half the width */
+	}
+.logo-image {
+	height: 250px;
+	width: 180px;
+	background-image: url("img/logo250x180.png");
+	background-repeat: no-repeat;
+	background-position: 0% 80%;
+  }
+  /*this is the hover event trigger*/
+ /* .logo-image:hover {
+    cursor:pointer; 
+    background:url("img/ezgif.com-gif-maker.gif");
+	background-repeat: no-repeat;
+	background-position: 0% 80%;
+  }*/
+.footer{
+	position: fixed;
+	bottom: 0;
+	color: #A5A5A5;
+	text-align: center;
+	width: 100%;
+}
+body {
+	background-image: url("img/HomePage.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	text-align: left;
+	margin:0;
+	font-family: "Open Sans", sans-serif;
+	}
+</style>
 
-  <body>
-    <div id="container">
-      <div class="inner">
+</head>
 
-        <section id="downloads" class="clearfix">
-        </section>
-
-        <header>
-          <h1><br><br></h1>
-          <center><a href="mailto:info@isee.ai"  style="color:#5498FF"><img src="images/logo.png" style="width:150px;height:200px;"></a></center>
-
-        </header>
-
-            <center><p><br>A Computer Vision and Artificial Intelligence Company<br>
-            </p></center>
-
-        <section id="main_content">
-
-        </section>
-
-        <footer>
-
-        
-      </div>
+<body>
+	<div class="container">
+  		<header class="header">
+  			<ul class="nav">
+    			<li><a class="nav-active" href="Index.html">Home</a></li>
+        		<li><a class="nav-inactive" href="01-job.html">Job</a></li>
+        		<li><a class="nav-inactive" href="02-contact.html">Contact</a></li>
+    		</ul>
+  		</header>
+	</div>
+<div class="logo">
+    <div class="logo-image" >
+	</div>
+    <img class="logo-text" src="img/logo250x70.png" width="250" height="70" alt=""/>
+</div>
+<footer>
+	<div class="footer">
+    <p >© 2016 iSee, Inc. </p>
     </div>
-  </body>
-</html>
+
+</footer>
+</body></html>

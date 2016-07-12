@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+<style type="text/css">
+html, body {
+    		height: 100%;
+    		margin: 0;
+    	}
+.container {
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	bottom: 0;
+ 	right: 0;
+  	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	}
+.header {
+	padding-top: 0em;
+	padding-left: 7vw;
+	padding-right: 7vw;
+	}
+.logo-header{
+	display: flex;
+	float: left;
+	height: 5em;
+	width: 6em;
+	padding-top: auto;
+	padding-right: auto;
+	padding-bottom: auto;
+	padding-left: auto;
+	margin-bottom: 0px;
+	}
+.nav {
+	display: flex;
+	flex-direction: row;
+	float: right;
+	}
+.nav a {
+	display: block;
+	font-size: 1.2em;
+	text-align: center;
+	padding: 0.4em;
+	text-decoration: none;
+	width: 5em;
+	font-variant: small-caps;
+	font-weight: 300;
+	}
+.nav-active{
+	color: #FFFFFF;
+		}
+.nav-inactive{
+	color: #AFAFAF;
+		}
+.nav a:hover {
+	display: block;
+	color: #FFFFFF;
+	}
+ul{
+list-style-type:none;
+}
+.row-info {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	background-color: rgba(0,0,0,0.3);
+	width: auto;
+	height:100%;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	padding-left: 7vw;
+	padding-right: 7vw;
+	line-height: 1.5;
+	}
+.info-l{
+	width: 33vw;
+	padding-top: 1.5em;
+	padding-right: 1.5em;
+	padding-bottom: 1.5em;
+	padding-left: 1.5em;
+}
+.logo-info{
+	height: 10em;
+	width: 12em;
+}
+.info-a{
+	width: 33vw;
+	text-align: center;
+	font-weight: 300;
+	color: #AFAFAF;
+
+}
+.footer{
+	bottom: 0px;
+	color: #A5A5A5;
+	text-align: center;
+	width: 100%;
+	font-size: 0.8em;
+	margin-bottom: 0px;
+}
+body {
+	background-image: url("img/HomePage.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	text-align: left;
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+	font-size: medium;
+}
+.email{
+	color: rgba(80,201,252,1.00);
+}
+</style>
+</head>
+<body class="body">
+<div class="container">
+  <header class="header">
+  	<img class="logo-header" src="img/logo360x300.png" width="360" height="300" alt=""/>
+	<ul class="nav">
+		<li><a class="nav-inactive" href="Index.html">Home</a></li>
+        <li><a class="nav-inactive" href="01-job.html">Job</a></li>
+        <li><a class="nav-active" href="02-contact.html">Contact</a></li>
+    </ul>
+ </header>
+<div class="row-info">
+    <div class="info-l">
+    	<img class="logo-info" src="img/logo360x300.png" width="360" height="300" alt=""/>
+     </div>
+     <p class="info-a"> One Broadway, 12th floor<br>
+			Cambridge, MA 02142</p>
+     <p class="info-a">+1(818)5886806<br>
+			<a class="email" href="mailto:info@isee.ai">info@isee.ai</a></p>
+</div>
+ <footer>
+	<div class="footer">
+    <p >© 2016 iSee, Inc. </p>
+    </div>
+</footer>
+</div>
+</body>
+</html>

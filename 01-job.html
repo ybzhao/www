@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+<style type="text/css">
+/* { margin: 0; padding: 0; border: none; }*/
+/* header */
+.container {
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	bottom: 0;
+ 	right: 0;
+  	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	}
+.header {
+	padding-top: 0em;
+	padding-left: 7vw;
+	padding-right: 7vw;
+	}
+.logo-header{
+	display: flex;
+	float: left;
+	height: 5em;
+	width:6em;
+	}
+.nav {
+	display: flex;
+	flex-direction: row;
+	float: right;
+	}
+.nav a {
+	display: block;
+	font-size: 1.2em;
+	text-align: center;
+	padding: 0.4em;
+	text-decoration: none;
+	width: 5em;
+	font-variant: small-caps;
+	font-weight: 300;
+	}
+.nav-active{
+	color: #FFFFFF;
+		}
+.nav-inactive{
+	color: #AFAFAF;
+		}
+.nav a:hover {
+	display: block;
+	color: #FFFFFF;
+	}
+ul{
+list-style-type:none;
+}
+/*.rowdark {
+	display: flex;
+	flex-direction: row;
+	background-color: rgba(0,0,0,0.7);
+	width: auto;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	padding-left: 7vw;
+	padding-right: 7vw;
+	line-height: 1.5;
+	border-left: medium solid rgba(255,255,255,1.00);
+}*/
+.rowlight {
+	display: flex;
+	flex-direction: row;
+	background-color: rgba(0,0,0,0.3);
+	width: auto;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	padding-left: 7vw;
+	padding-right: 7vw;
+	line-height: 1.5;
+}
+.rowlight:hover{
+	display: flex;
+	background-color: rgba(0,0,0,0.7);
+	border-left: medium solid rgba(255,255,255,1.00);
+		}
+.left {
+	width: 25vw;
+	float: left;
+	font-size: 1.3em;
+	color: #FFFFFF;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	font-variant:small-caps;
+	}
+.right {
+	width: 75vw;
+	float: right;
+	font-size: 0.9em;
+	color: #939393;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400; 
+	}
+.footer{
+	bottom: 0;
+	color: #A5A5A5;
+	text-align: center;
+	width: 100%;
+	font-size:0.8em
+}
+body {
+	background-image: url("img/HomePage.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	text-align: left;
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+	font-size: medium;
+}
+.email{
+	color: rgba(80,201,252,1.00);
+}
+</style>
+</head>
+<body class="body">
+<div class="container">
+  <header class="header">
+  	<img class="logo-header" src="img/logo360x300.png" width="360" height="300" alt=""/>
+	<ul class="nav">
+		<li><a class="nav-inactive" href="Index.html">Home</a></li>
+        <li><a class="nav-active" href="01-job.html">Job</a></li>
+        <li><a class="nav-inactive" href="02-contact.html">Contact</a></li>
+	  </ul>
+</header>
+<main class="main">
+	<div class="rowlight">
+  		<h2 class="left" style="">Work with us</h2>
+		<p class="right" style="text-align: left">iSee develops groundbreaking artificial intelligence technology for machine to percept and understand the world. You will work with a group of top scientists, engineers and business professionals in Cambridge, MA. We have both full-time and part-time positions available for you. Work remotely is also acceptable. Please contact us if you are interested in joining us to make something awesome!<br>
+  Full-time employment is preferred. Part-time or intern students are also welcomed to apply. Please send your resume to <a class="email" href="mailto:info@isee.ai">info@isee.ai</a> and a meeting will be scheduled asap. <br>
+		</p>
+	</div>
+	<div class="rowlight">
+  		<h2 class="left">Computer Vision Scientists</h2>
+  		<p class="right">ROLE <br>
+    We are looking for PhDs in Computer Vision, Signal Processing or Numerical Analysis that are passionate about developing algorithms and software for virtual reality within gaming and other industries. Your focus will be to find new, clever ways to use computer vision and IMU data to maximize positional tracking quality and stability of multiple devices in the same map, while lowering the CPU and memory usage. You will be working in a small team with very high standards, using modern technology and exciting VR/AR solutions. You will work with Git, Linux, OS X or Windows depending on your choice and C++. <br>
+    QUALIFICATION <br>
+    – PhD in Computer Vision, Signal Processing, Numerical Analysis or equivalent experience <br>
+    – History of working with SLAM solutions or equivalent experience is a big plus <br>
+    – Medium to strong knowledge of C/C++ <br>
+    – Self-driven with a strong sense of quality <br>
+    – Heavy focus on the end result and desire to find the most pragmatic solution<br>
+  </p>
+	</div>
+	<div class="rowlight">
+  		<h2 class="left">Sensor Fusion Expert </h2>
+  		<p class="right">ROLE <br>
+    We are looking for a sensor fusion expert with the right academic background and substantial practical expertise from sensor fusion, who is passionate about developing algorithms and software for virtual reality and augmented reality for use within a large number of industries. Your focus will be to find new, clever ways to use computer vision with IMU data to maximize positional tracking quality and stability of multiple devices in the same map, while lowering the CPU and memory usage. You will be working in a small team with very high standards, using modern technology and exciting VR/AR solutions. You will work with Git, Linux, OS X or Windows depending on your choice and C++. <br>
+    QUALIFICATION <br>
+    – PhD in Signal Processing or equivalent experience <br>
+    – History of working with sensor fusion for several years <br>
+    – Strong knowledge of C/C++ <br>
+    – Self-driven with a strong sense of quality <br>
+    – Heavy focus on the end result and desire to find the most pragmatic solution<br>
+  		</p>
+	</div>
+	<div class="rowlight">
+  		<h2 class="left">C++ Software Engineer </h2>
+  		<p class="right">ROLE <br>
+    We are looking for a talented person who is passionate about developing software systems for virtual/mixed reality within gaming and other industries. Your focus will be on writing highly optimized and concurrent C++ code. You should have some experience from SIMD optimizations on x86/x64 or ARM. You will be working in a small team with very high standards, using modern technology and exciting VR solutions. You will work with Git, Linux, OS X or Windows depending on your choice and C++. <br>
+    QUALIFICATION <br>
+    – BSc in Computer Science, Computer Engineering or equivalent experience <br>
+    – Strong knowledge of C/C++ <br>
+    – Experience from development where concurrency, memory and performance are of high importance <br>
+    – Self-driven with a strong sense of quality <br>
+    – Heavy focus on the end result and desire to find the most pragmatic solution<br>
+  		</p>
+  	</div>
+	<div class="rowlight">
+	  	<h2 class="left">Virtual Reality Engineers </h2>
+  		<p class="right">ROLE <br>
+    We are looking for versatile, self-directed hardware and software engineers in many disciplines that can help us achieve the next steps in VR/MR. You will be working in a small team with very high standards, using modern technology and exciting VR/MR solutions. <br>
+    QUALIFICATION <br>
+    – BSc in Computer Science, Computer Engineering or equivalent experience <br>
+    – Experience of working on following following areas: <br>
+    – Human Computer Interaction <br>
+    – Controllers <br>
+    – Computer Vision (Tracking, Photogrammetry, Bundle Adjustment) <br>
+    – Image-Based Rendering &amp; Light Field Rendering – Optics &amp; Computational Displays <br>
+    – Tracking (EKF, State Estimation, Inertial Navigation, Control Theory) <br>
+    – Engine Integration (Unity, Unreal) <br>
+    – Human Perception &amp; Vision Science <br>
+    – FPGA / ASIC Development <br>
+    – Embedded Firmware <br>
+    – Network e-commerce system <br>
+    – Self-driven with a strong sense of quality <br>
+    – Heavy focus on the end result and desire to find the most pragmatic solution <br>
+  		</p>
+	</div>
+</main>
+<footer>
+	<div class="footer">
+    <p >© 2016 iSee, Inc. </p>
+    </div>
+</footer>
+</div>
+</body>
+</html>

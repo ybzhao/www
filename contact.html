@@ -29,7 +29,7 @@ html, body {
 .logo-header{
 	display: flex;
 	float: left;
-	height: 5em;
+	padding-top: 1.2em;
 	width:6em;
 	}
 .nav {
@@ -48,33 +48,34 @@ html, body {
 	font-weight: 300;
 	}
 .nav-active{
-	color: #FFFFFF;
+	color: #2F2F2F;
 		}
 .nav-inactive{
 	color: #AFAFAF;
 		}
 .nav a:hover {
 	display: block;
-	color: #FFFFFF;
+	color: #4F4F4F;
 	}
 ul{
 list-style-type:none;
 }
 .row-info {
 	display: flex;
+	text-align: center;
 	align-items: center;
-	flex-direction: row;
-	background-color: rgba(0,0,0,0.3);
-	width: auto;
+	#flex-direction: row;
+	#width: auto;
 	height:100%;
 	padding-top: 2em;
 	padding-bottom: 2em;
-	padding-left: 7vw;
+	padding-left: 17vw;
 	padding-right: 7vw;
 	line-height: 1.5;
 	}
 .info-l{
 	width: 33vw;
+	margin: auto;
 	padding-top: 1.5em;
 	padding-right: 1.5em;
 	padding-bottom: 1.5em;
@@ -85,26 +86,21 @@ list-style-type:none;
 	width: 12em;
 }
 .info-a{
-	width: 33vw;
-	text-align: center;
+	text-align: center; 
+  	vertical-align: middle;
+  	display: table-cell; 
+	width: 44vw;
 	font-weight: 300;
-	color: #AFAFAF;
+	color: #2F2F2F;
 
 }
 .footer{
-	bottom: 0px;
+	bottom: 0;
 	color: #A5A5A5;
 	text-align: center;
 	width: 100%;
-	font-size: 0.8em;
-	margin-bottom: 0px;
 }
 body {
-	background-image: url("img/HomePage.png");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
-	background-size: cover;
 	text-align: left;
 	margin: 0;
 	font-family: "Open Sans", sans-serif;
@@ -118,7 +114,7 @@ body {
 <body class="body">
 <div class="container">
   <header class="header">
-  	<img class="logo-header" src="img/logo360x300.png" width="360" height="300" alt=""/>
+  	<img class="logo-header" src="img/logo.png" width="300" alt=""/>
 	<ul class="nav">
 			<li><a class="nav-inactive" href="index.html">Home</a></li>
 	        <li><a class="nav-inactive" href="jobs.html">Jobs</a></li>
@@ -126,15 +122,12 @@ body {
     </ul>
  </header>
 <div class="row-info">
-    <div class="info-l">
-    	<img class="logo-info" src="img/logo360x300.png" width="360" height="300" alt=""/>
-     </div>
      <p class="info-a">501 Massachusetts Ave.<br>Cambridge, MA 02139</p>
-	 <a class="email" href="mailto:info@isee.ai">info@isee.ai</a></p>
+	 <a class="email" href="mailto:info@isee.ai">info@isee.ai</a>
 </div>
  <footer>
 	<div class="footer">
-    <p >© 2016 iSee, Inc. </p>
+    <p >© 2017 iSee, Inc. </p>
     </div>
 </footer>
 </div>

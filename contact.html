@@ -123,7 +123,12 @@ body {
  </header>
 <div class="row-info">
      <p class="info-a">501 Massachusetts Ave.<br>Cambridge, MA 02139</p>
-	 <a class="email" href="mailto:info@isee.ai">info@isee.ai</a>
+	 <script language=javascript>
+		var contact = "info AT isee DOT ai"
+		var email = "info"
+		var emailHost = "isee.ai"
+		document.write("<a class=\"email\" href=" + "mail" + "to:" + email + "@" + emailHost+ ">" + contact + "</a>")
+	</script>
 </div>
  <footer>
 	<div class="footer">

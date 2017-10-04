@@ -83,23 +83,23 @@ body {
 	}
 </style>
 
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
 	<div class="container">
-  		<header class="header">
-  			<ul class="nav">
-				<li><a class="nav-active" href="index.html">Home</a></li>
-		        <li><a class="nav-inactive" href="join.html">Join us</a></li>
-		        <li><a class="nav-inactive" href="contact.html">Contact</a></li>
-    		</ul>
-  		</header>
-		<div class="content">
+        <header class="header">
+            <ul class="nav">
+                <li><a class="nav-active" href="index.html">Home</a></li>
+                <li><a class="nav-inactive" href="join.html">Join us</a></li>
+                <li><a class="nav-inactive" href="press.html">Press</a></li>
+                <li><a class="nav-inactive" href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+		<div class="content"/>
 	</div>
-	<footer>
-		<div class="footer">
-	    	<p >© 2017 ISEE, Inc. </p>
-	    </div>
-	</footer>
-
+    <div id="footer"></div>
+    <script>
+        $("#footer").load("footer.html");
+    </script>
 </body></html>

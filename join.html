@@ -154,17 +154,20 @@ body {
 	color: rgba(80,201,252,1.00);
 }
 </style>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body class="body">
 <div class="container">
-  <header class="header">
-  	<img class="logo-header" src="img/logo.png" width="300" alt=""/>
-	<ul class="nav">
-			<li><a class="nav-inactive" href="index.html">Home</a></li>
-	        <li><a class="nav-active" href="join.html">Join us</a></li>
-	        <li><a class="nav-inactive" href="contact.html">Contact</a></li>
-	  </ul>
+
+<header class="header">
+    <ul class="nav">
+        <li><a class="nav-inactive" href="index.html">Home</a></li>
+        <li><a class="nav-active" href="join.html">Join us</a></li>
+        <li><a class="nav-inactive" href="press.html">Press</a></li>
+        <li><a class="nav-inactive" href="contact.html">Contact</a></li>
+    </ul>
 </header>
+
 <main class="main">
 	<div class="rowlight">
   		<h1 class="left" style=""> <b> JOIN US </b> </h1>
@@ -240,11 +243,10 @@ body {
 	</div>
 
 </main>
- <footer>
-	<div class="footer">
-    <p >© 2017 iSee, Inc. </p>
-    </div>
-</footer>
+<div id="footer"></div>
+<script>
+    $("#footer").load("footer.html");
+</script>
 </div>
 </body>
 </html>

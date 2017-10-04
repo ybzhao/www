@@ -109,32 +109,39 @@ body {
 .email{
 	color: rgba(80,201,252,1.00);
 }
+
+
 </style>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
+
 <body class="body">
 <div class="container">
-  <header class="header">
-  	<img class="logo-header" src="img/logo.png" width="300" alt=""/>
-	<ul class="nav">
-			<li><a class="nav-inactive" href="index.html">Home</a></li>
+
+	<header class="header">
+	    <ul class="nav">
+	        <li><a class="nav-inactive" href="index.html">Home</a></li>
 	        <li><a class="nav-inactive" href="join.html">Join us</a></li>
+	        <li><a class="nav-inactive" href="press.html">Press</a></li>
 	        <li><a class="nav-active" href="contact.html">Contact</a></li>
-    </ul>
- </header>
-<div class="row-info">
-     <p class="info-a">501 Massachusetts Ave.<br>Cambridge, MA 02139</p>
-	 <script language=javascript>
-		var contact = "info AT isee DOT ai"
-		var email = "info"
-		var emailHost = "isee.ai"
-		document.write("<a class=\"email\" href=" + "mail" + "to:" + email + "@" + emailHost+ ">" + contact + "</a>")
-	</script>
+	    </ul>
+	</header>
+
+	<div class="row-info">
+	     <p class="info-a">501 Massachusetts Ave.<br>Cambridge, MA 02139</p>
+		 <script language=javascript>
+			var contact = "info AT isee DOT ai"
+			var email = "info"
+			var emailHost = "isee.ai"
+			document.write("<a class=\"email\" href=" + "mail" + "to:" + email + "@" + emailHost+ ">" + contact + "</a>")
+		</script>
+	</div>
+	<div id="footer"></div>
 </div>
- <footer>
-	<div class="footer">
-    <p >© 2017 iSee, Inc. </p>
-    </div>
-</footer>
-</div>
+
+
+<script>
+    $("#footer").load("footer.html");
+</script>
 </body>
 </html>
